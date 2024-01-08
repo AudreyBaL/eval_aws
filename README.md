@@ -26,7 +26,6 @@ Assurez-vous d'avoir les éléments suivants avant d'utiliser cette configuratio
 ### Personnalisation
 
 1. Modifiez les valeurs dans `variables.tf` selon vos besoins.
-2. Adapter les valeurs dans "providers.tf" et "ressources.tf" également si besoin.
 3. Configurez les informations d'identification AWS localement avec `aws configure`.
 4. Vérifiez et ajustez d'autres paramètres dans les fichiers Terraform en fonction de vos besoins spécifiques.
 
@@ -35,11 +34,11 @@ Assurez-vous d'avoir les éléments suivants avant d'utiliser cette configuratio
 1. Initialisez Terraform :
 terraform init
 
-Examinez le plan Terraform :
+2. Examinez le plan Terraform :
 terraform plan
 
-Appliquez les configurations pour créer l'infrastructure :
+3. Appliquez les configurations pour créer l'infrastructure :
 terraform apply
 
-Détruisez l'infrastructure après utilisation :
+4. Détruisez l'infrastructure après utilisation :
 terraform destroy
