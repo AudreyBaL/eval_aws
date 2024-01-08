@@ -17,7 +17,7 @@ backend "s3" {
 
 # configuration du provider AWS
 provider "aws" {
-  region     = "var.aws_region" 
+  region     = var.aws_region 
   access_key = "your_access_key" 
   secret_key = "your_secret_key" 
 }

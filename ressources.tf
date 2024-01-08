@@ -3,8 +3,8 @@
 #Création d une instance EC2 avec AMI spécifiée
 #AMI libre d acces recupere dans le catalogue
 resource "aws_instance" "app_server" {
-  ami           = "var.name_ami"
-  instance_type = "var.instance_type"
+  ami           = var.name_ami
+  instance_type = var.instance_type
   vpc_security_group_ids = [aws_security_group.allow_tls.id]
   subnet_id = aws_subnet.my_subnet.id
 
